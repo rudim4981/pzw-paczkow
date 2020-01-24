@@ -19,4 +19,28 @@ div.menu-item > div > svg {
     margin: 2% !important;
     display: inline !important;
 }
+    section.image {
+    background-color: rgb(240,244,247);
+}
+    .zd1, .zd2, .zd3{
+    display: none
+    }
+    section.image-under-text {
+    display: none;
+.text3 > div > svg {
+    height: 21px;
+    float: right;
+    margin-top: -60px;
+    margin-right: -430px;
+    transition: .3s;
+    cursor: pointer;
+}
+.text3 > div > svg {
+    height: 21px;
+    float: right;
+    margin-top: -60px;
+    margin-right: -430px;
+    transition: .3s;
+    cursor: pointer;
+}
 }
