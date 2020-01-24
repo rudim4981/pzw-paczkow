@@ -52,5 +52,8 @@ div.menu-item > div > svg {
         .zajecia3-zdjecie {
     display: none;
 }
+div.oferty > div {
+    height: auto !important;
+}
 
 }
