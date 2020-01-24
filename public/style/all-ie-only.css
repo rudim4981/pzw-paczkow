@@ -1,4 +1,4 @@
-div.menu-item > div > svg {
+ *::-ms-backdrop, div.menu-item > div > svg {
     padding: 25px !important;
     width: 50px !important;
     height: 24px !important;
@@ -8,14 +8,13 @@ div.menu-item > div > svg {
     margin-top: -70px !important;
     margin-left: 70px !important;
 }
-.menu-item {
-    width: 14% !important;
+ *::-ms-backdrop, .menu-item {
+    width: 100% !important;
     display: inline-block !important;
     text-align: center !important;
     padding: 10px !important;
 }
-.menu-outside {
-    display: initial !important;
+ *::-ms-backdrop, .menu-outside {
     margin: 2% !important;
     display: inline !important;
 }
