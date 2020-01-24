@@ -9,7 +9,7 @@
     margin-left: 70px !important;
 }
  .menu-item {
-    width: 100% !important;
+    width:unset !important;
     display: inline-block !important;
     text-align: center !important;
     padding: 10px !important;
