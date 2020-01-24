@@ -1,0 +1,859 @@
+html,body{
+    scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+*::selection{
+	background-color: lightgrey;
+}
+body{
+	background-color: rgb(250, 250, 250);
+	margin: 0;
+	font-family: "Montserrat";
+}
+header{
+	color: rgb(14, 31, 88);
+	height: 125px;
+    text-align: center;
+    line-height: 125px;
+}
+header > h1{
+	font-weight: 100;
+    font-size: 35px;
+}
+p.menu-link{
+    margin-block-start: 0em;
+    width: 100%;
+    text-align: center;
+    margin-block-end: 0.4em;
+}
+div.menu-item > div > svg{
+	padding: 10px;
+	height: 25px;
+    margin-bottom: -6px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 107px;
+}
+div.menu-item > div > svg#rotate {
+	transform: rotate(180deg);
+	color: rgb(255,137,50);
+}
+footer.zaj{
+	text-align: center;
+    width: 90%;
+    color: grey;
+    background-color: rgb(240,244,247);
+    padding: 0px 0 15px 0;
+    font-size: 12px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.oferty-jakdolaczyc{
+    text-align: center;
+    padding: 100px;
+	margin-top: 200px;
+}
+div.oferty-jakdolaczyc > h1{
+	font-size: 4vmin;
+}
+div.oferty-instruktorzy{
+    text-align: center;
+    padding: 100px;
+}
+div.oferty-instruktorzy > h1{
+	font-size: 4vmin;
+}
+div.left-click, div.right-click{
+	height: 50px;
+	width: 50px;
+	background-color: grey;
+}
+.instruktor {
+	transition: 2s;
+    margin: 20px 0;
+    padding: 20px 0;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.to-left{
+	margin-left: 100%;
+}
+.to-right {
+    margin-left: -100%;
+}
+.instruktor-zdjecie {
+    width: 40%;
+    align-self: center;
+}
+.tekst-zarzad > *{
+	font-size: 3vmin;
+}
+.instruktor-zdjecie > img {
+    width: 100%;
+    border-radius: 50%;
+    transition: 3s;
+}
+.instruktor-zdjecie > img:hover {
+    border-radius: 35%;
+    transition: 1s;
+}
+div.oferty-jakdolaczyc > div{
+    display: inline-block;
+}
+.instruktor-tekst {
+	align-self: center;
+	text-align: center;
+    width: 60%;
+    display: inline;
+    padding: 10px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    align-items: center;
+}.instruktor-tekst > h6{
+    font-size: 5vmin;
+}
+.podstrony-menu{
+	width: 95% !important;
+    padding: 10px !important;
+}
+}
+.instruktorzy > * {
+    color: rgb(14, 31, 88);
+}
+div.oferty-jakdolaczyc > div.oferta:hover{
+    box-shadow: 0px 0px 115px orange inset;
+    transition: 1s;
+}
+div.oferty-jakdolaczyc > div.oferta{
+    background-color: rgb(250, 250, 250);
+    height: 250px;
+    width: 20%;
+    padding: 20px;
+    display: inline-table;
+    margin: 1%;
+    box-shadow: -1px -1px 50px orange inset;
+    transition: 1s;
+}
+section.jakdolaczyc{
+	background-color: rgb(240,244,247);
+}
+section.jakdolaczyc > *{
+	color: rgb(14, 31, 88);
+}
+div.both-jakdolaczyc{
+	text-align: center;
+    width: 100%;
+    background-color: rgb(240,244,247);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+div.menu-hidden{
+	position: fixed;
+    width: 13%;
+    text-align: center;
+    padding: 10px;
+    left: 14%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 0 15px 15px;
+	top: -400px;
+	transition: .4s;
+    z-index: 99;
+}
+p.podmenu{
+	width: 100%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+	font-size: 0.7em;
+}
+div.menu-hidden-top{
+	position: fixed;
+    width: 13%;
+    text-align: center;
+    padding: 10px;
+    left: 14%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 0 15px 15px;
+	top: 50px !important;
+	transition: .4s;
+	z-index:1;
+}
+div.menu-hidden-def{
+	position: fixed;
+    width: 13%;
+    text-align: center;
+    padding: 10px;
+    left: 14%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 0 15px 15px;
+	top: 200px;
+	transition: .4s;
+}
+div.menu-hidden-2{
+    position: fixed;
+    width: 13%;
+    text-align: center;
+    padding: 10px;
+    left: 33.3%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 0 15px 15px;
+    top: -200px;
+    transition: .4s;
+}
+.zajecia1-zdjecie{
+	background-image: url('../images/zaj1.jpg');
+	width: 50%;
+    background-size: cover;
+    height: 700px;
+    float: left;
+}
+.zajecia2-zdjecie{
+	background-image: url('../images/zaj2.jpg');
+	width: 50%;
+    background-size: cover;
+    height: 700px;
+    float: left;
+}
+.zajecia3-zdjecie{
+	background-image: url('../images/zaj3.jpg');
+	width: 50%;
+    background-size: cover;
+    height: 700px;
+    float: left;
+}
+.zarzad > *{
+	color: rgb(14, 31, 88);
+}
+.zarzad {
+    margin: 20px 0;
+    padding: 20px 0;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.osoby-zarzad {
+    width: 33%;
+    margin: 0;
+    padding: 10px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    align-items: center;
+}
+.osoby-zarzad > h3 {
+    text-align: center;
+    font-size: 5vmin;
+}
+.zdjecie-zarzad > img{
+	width: 100%;
+    border-radius: 100%;
+}
+.tekst-zarzad {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+.grey {
+    background-color: rgb(240,244,247);
+}
+svg.of-hidden-2.svg-inline--fa.fa-caret-down.fa-w-10:hover {
+    color: orange;
+	transition:.2s;
+}
+svg.of-hidden-1.svg-inline--fa.fa-caret-down.fa-w-10:hover {
+    color: orange;
+	transition:.2s;
+}
+svg.of-hidden-2.svg-inline--fa.fa-caret-down.fa-w-10{
+	transition:.2s;
+}
+svg.of-hidden-1.svg-inline--fa.fa-caret-down.fa-w-10{
+	transition:.2s;
+}
+div.menu-hidden-top-2{
+    position: fixed;
+    width: 13%;
+    text-align: center;
+    padding: 10px;
+    left: 33.333%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 0 15px 15px;
+    top: 50px !important;
+    transition: .4s;
+    z-index: 1;
+}
+div.menu-hidden-def-2{
+	position: fixed;
+    width: 13%;
+    text-align: center;
+    padding: 10px;
+    left: 14%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 0 15px 15px;
+	top: 200px;
+	transition: .4s;
+}
+div.menu-hidden > p{
+	color: rgb(14, 31, 88);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+section#kontakt > div > a > div.mapa{
+	background-image: url(../images/mapa.jpg);
+    height: 500px;
+    width: 40%;
+	background-size: cover;
+    background-position: center;
+	float: left;
+    border-radius: 100%;
+	transition: 2s;
+}
+section.zajecia {
+	transition: 2s;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240,244,247);
+    margin-top: 200px;
+}
+footer{
+	text-align: center;
+	width: 100%;
+	color: grey;
+    background-color: rgb(240,244,247);
+    padding: 0px 0 15px 0;
+	font-size: 12px;
+	clear: both;
+}
+section#kontakt > div > div.kontakt-info{
+	height: 250px;
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    float: right;
+    margin-top: 12%;
+    line-height: 2em;
+    color: #0E1F58 !important;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+section#kontakt > div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 100px;
+}
+a > svg{
+    height: 30px;
+	color: black;
+}
+a.facebook > svg > path:hover{
+	fill: royalblue !important;
+}
+a.twitter > svg > path:hover{
+	fill: dodgerblue !important;
+}
+a.youtube > svg > path:hover{
+	fill: red !important;
+}
+div.both{
+	clear: both;
+    padding-top: 100px;
+}
+section#kontakt > h1{
+    font-size: 44px;
+    color: orange;
+    font-weight: 100;
+}
+section#kontakt{
+    padding: 110px 0 1px 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240,244,247);
+}
+a.menu-link {
+    color: rgb(14, 31, 88);
+    text-decoration: none;
+    font-size: 20px;
+	cursor: pointer;
+}
+.menu-item {
+	width: 14%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+.top, .bottom, .def{
+	text-align: center;
+	background-color: rgb(250, 250, 250);
+	width: 100%;
+	z-index: 9999;
+}
+.def{
+	position: fixed;
+    top: 0px;
+}
+.hidden{
+	height: 45px;
+	width: 100%;
+}
+.top {
+	position: fixed;
+	top: -150px !important;
+	transition: top .2s ease-out;
+	transition: top .2s ease-out;
+}
+.bottom {
+	position: fixed;
+	top: -193px !important;
+	transition: top .2s ease-out;
+	transition: top .2s ease-out;
+	cursor: pointer;
+}
+.menu-outside {
+    display: initial;
+    margin: 2%;
+}
+.menu-item:after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+  margin-top: 5px;
+}
+.menu-item-active:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 300ms;
+  margin-top: 5px;
+}
+
+.menu-item:hover:after {
+  width: 100%;
+}
+section.image{
+	background-image:url('../images/lodz.jpg');
+	height: 1000px;
+    width: 100%;
+	background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0px;
+}
+section.text3{
+    padding: 110px 0;
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text3 > h1 {
+    font-size: 44px;
+    color: orange;
+    font-weight: 100;
+}
+div.aktualnosci{
+	height: 500px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 100px;
+}
+div.aktualnosci > div > div:last-of-type{
+    height: 69%;
+    text-align: justify;
+    position: relative;
+}
+div#info-news{
+	transition: 2s;
+	width: 20%;
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgb(240,244,247);
+    padding: 0px;
+    border: 0px solid rgb(255,137,50);
+	transition: 1s;
+	color: transparent;
+    font-size: 0px;
+}
+div.active{
+    width: 40% !important;
+    margin: 50px auto !important;
+    text-align: left !important;
+    background-color: rgb(240,244,247);
+    padding: 100px !important;
+    border: 1px solid rgb(255,137,50) !important;
+	transition: 1s;
+    color: #0E1F58 !important;
+    font-size: 20px !important;
+}
+div.aktualnosci > div > div > button{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(255,137,50);
+    border: 1px solid rgb(255,137,50);
+    cursor: pointer;
+    transition: all .5s;
+    position: absolute;
+    bottom: 0;
+}
+div.aktualnosci > div > div > button:hover{
+	background-color: rgb(255,137,50) !important;
+    color: rgb(221,229,255) !important;
+}
+div.aktualnosci > div > div > h3{
+    color: rgb(255,137,50);
+    text-align: center;
+}
+div.aktualnosci > div > div > h3 > i{
+    color: gray;
+    font-size: 12px;
+}
+div.aktualnosci > div > div > p{
+	width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+div.aktualnosci > div{
+    width: 30%;
+    float: left;
+    background-color: rgb(240,244,247);
+    margin: 0 1.667%;
+}
+.document:after{
+    content: "\f1ea";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: rgb(14,31,88);
+    font-size: 90px;
+}
+section.image-under-text{
+	width: 100%;
+    height: 600px;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url(../images/tlo.jpg);
+}
+#loader{
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    width: 100%;
+}
+#progress{
+    height: 100%;
+    width: 1%;
+    margin-left: -5px;
+	background-color: red;
+}
+.image1-text{
+	    position: absolute;
+    width: 100%;
+    margin-top: 33%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    text-shadow: 1px 1px 8px orangered;
+}
+.text1 > h1{
+	text-align: center;
+    font-size: 44px;
+    color: transparent;
+    font-weight: 100;
+    padding: 125px 0;
+	transition: all 1.5s;
+	margin: 0;
+}
+.zajecia1-text {
+    width: 50%;
+    float: right;
+    text-align: center;
+	padding-top: 10%;
+}
+footer.zaj1{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.menu-outside-zaj1{
+	margin: 0;
+}
+div.both-zaj1{
+	text-align: center;
+    width: 90%;
+    background-color: rgb(240,244,247);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+div.zajecia1-text > ul {
+    display: inline-block;
+    text-align: left;
+    font-size: 17px;
+	width: 75%;
+}
+div.zajecia1-text > h1 {
+    color: rgb(255,137,50);
+    font-size: 32px;
+}
+.text1 > p{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    color: #0E1F58;
+}
+.text2{
+	padding: 110px 0;
+	background-color: rgb(240,244,247);
+	text-align: center;
+}
+button.onas{
+	height: 50px;
+    width: 200px;
+    background-color: transparent;
+    color: rgb(255,137,50);
+    border: 1px solid rgb(255,137,50);
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 16px;
+    margin: 100px 0;
+}
+.text3 > div > svg{
+	height: 21px;
+    float: right;
+    margin-top: -60px;
+    margin-right: -60px;
+	transition: .3s;
+	cursor: pointer;
+}
+.text3 > div > svg:hover{
+    transform: rotate(90deg);
+	transition: .3s;
+}
+button.onas:hover {
+    background-color: rgb(255,137,50) !important;
+    color: white !important;
+}
+.text2 > h1{
+	text-align: center;
+    font-size: 44px;
+    color: orange;
+    font-weight: 100;
+}
+.text2 > p{
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    color: #0E1F58;
+	padding-left: 2000px;
+	transition: all 1s;
+}
+div.oferty{
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flow-root;
+}
+div.oferty > div {
+	width: 33.33333%;
+    height: 680px;
+    background-position: center;
+    background-size: cover;
+    float: left;
+	margin-left: -635px;
+	transition: all 1.5s;
+	    display: inline-table;
+}
+div.oferty > div > div {
+	height: 50%;
+    background-size: cover;
+    background-position: center;
+	text-align: center;
+}
+.zd1{
+	background-image:url('../images/zd1.jpg');
+}
+.zd2{
+	background-image:url('../images/zd2.jpg');
+}
+.zd3{
+	background-image:url('../images/zd3.jpg');
+}
+.zd1-text{
+	background-color:rgb(14,31,88);
+}
+.zd1-text > div{
+	padding: 15% 0;
+}
+.zd1-text > div > h2{
+	margin-block-start: 0;
+    color: rgb(221,229,255);
+    text-align: center;
+}
+.zd1-text > div > h5{
+	margin-block-start: 0;
+	color: rgb(221,229,255);
+    font-weight: 100;
+}
+.zd1-text > div > a > button{
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    color: rgb(221,229,255);
+    border: 1px solid rgb(221,229,255);
+	cursor: pointer;
+	transition: all .5s;
+}
+.zd1-text > div > a > button:hover{
+    background-color: rgb(221,229,255) !important;
+    color: rgb(14,31,88) !important;
+}
+.zd2-text{
+	background-color:rgb(255,137,50);
+}
+.zd2-text > div{
+	padding: 15% 0;
+}
+.zd2-text > div > h2{
+	margin-block-start: 0;
+    color: rgb(14,31,88);
+    text-align: center;
+}
+.zd2-text > div > h5{
+	margin-block-start: 0;
+	color: rgb(14,31,88);
+    font-weight: 100;
+}
+.zd2-text > div > a > button{
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    color: rgb(14,31,88);
+    border: 1px solid rgb(14,31,88);
+	cursor: pointer;
+	transition: all .5s;
+}
+.zd2-text > div > a > button:hover{
+    background-color: rgb(14,31,88) !important;
+    color: rgb(255,137,50) !important;
+}
+.zd3-text{
+	background-color:rgb(221,229,255);
+}
+.zd3-text > div{
+	padding: 15% 0;
+}
+.zd3-text > div > h2{
+	margin-block-start: 0;
+    color: rgb(255,137,50);
+    text-align: center;
+}
+.zd3-text > div > h5{
+	margin-block-start: 0;
+	color: rgb(255,137,50);
+    font-weight: 100;
+}
+.zd3-text > div > a > button{
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    color: rgb(255,137,50);
+    border: 1px solid rgb(255,137,50);
+	cursor: pointer;
+	transition: all .5s;
+}
+.zd3-text > div > a > button:hover{
+    background-color: rgb(255,137,50) !important;
+    color: rgb(221,229,255) !important;
+}
+.dowsw{
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    color: rgb(255,137,50);
+    border: 1px solid rgb(255,137,50);
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 16px;
+	margin: 100px 0;
+}
+.dowsw:hover{
+    background-color: rgb(255,137,50) !important;
+    color: white !important;
+}
+section.text1{
+	text-align: center;
+}
+.try{
+	height: 500px;
+	width: 33.3333%;
+	float: left;
+}
+.try:first-child, :not(.try) + .try {
+	background-color: red;
+}
+.try:last-of-type {
+  background-color: red;
+}
+.menu-hidden-2-mobile {
+    display: none;
+}
+.menu-hidden-mobile {
+    display: none;
+}
+button#tochange {
+    display: none;
+}
+.menu-all {
+    text-align: center;
+}

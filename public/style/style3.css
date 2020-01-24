@@ -1,0 +1,28 @@
+div.menu-item > div > svg{
+    margin-left: 70px;
+}
+section.image {
+    height: 700px;
+}
+.zajecia1-text{
+    padding-top: 0;
+}
+.zajecia1-zdjecie{
+    height: 400px;
+}
+.zajecia2-zdjecie{
+    height: 400px;
+}
+.zajecia3-zdjecie{
+    height: 400px;
+    background-position: right;
+}
+p.menu-link{
+    font-size: 17px;
+}
+.image1-text{
+    margin-top: 33%;
+}
+div.aktualnosci > div > div:last-of-type {
+    height: 79%;
+}

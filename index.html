@@ -1,0 +1,313 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Szymon Ruducha">
+<meta name="description" content="Strona na zaliczenie zajęć z PSK">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="public/images/ikona.jpeg" type="image/x-icon">
+<link rel="stylesheet" href="public/style/style.css" type="text/css">
+<link href="public/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="public/style/style2.css" media="(max-width: 700px)">
+<link rel="stylesheet" type="text/css" href="public/style/style3.css" media="(min-width: 701px) and (max-width: 1024px)">
+<link rel="stylesheet" type="text/css" href="public/style/style4.css" media="(min-width: 1025px) and (max-width: 1599px)">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
+<title>
+	PZW
+</title>
+</head>
+<body>
+<div class="menu" id="info">
+<header>
+	<h1>
+		PZW Paczków
+		<button id="tochange" onclick="addClass()" class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+	</h1>
+</header>
+	<div class="menu-all">
+	<div class="menu-outside">
+			<div id="oferty-link-width" class="menu-item">
+				<div>
+				<a name="oferty-link" class="menu-link">
+				<p class="menu-link">
+					Nasza oferta
+				</p>
+				</a>
+					<svg cart="def" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="of-hidden-1 svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+				</div>
+			</div>
+	</div>
+	<!--Dla użądzeń mobilnych -->
+	<div class="menu-hidden-mobile" id="menu-hidden-mobile">
+	<a href="podstrony/zaj-poczatkujacych.html" class="menu-link">
+		<p class="menu-link podmenu-mobile">
+			Zajęcia dla początkujących
+		</p>
+	</a>
+	<a href="podstrony/zaj-zaawansowanych.html" class="menu-link">
+		<p class="menu-link podmenu-mobile">
+			Zajęcia dla średnio zaawansowanych
+		</p>
+	</a>
+	<a href="podstrony/zaj-weterani.html" class="menu-link">
+		<p class="menu-link podmenu-mobile">
+			Zajęcia dla weteranów
+		</p>
+	</a>
+	<a href="podstrony/jak-dolaczyc.html" class="menu-link">
+		<p class="menu-link podmenu-mobile">
+			Jak do nas dołączyc?
+		</p>
+	</a>
+</div>
+<!--Koniec -->
+	
+	
+	<div class="menu-outside">
+		<div id="onas-width" class="menu-item">
+			<div>
+				<a name="onas-link" class="menu-link">
+				<p class="menu-link">
+					O nas
+				</p>
+				</a>
+					<svg cart="def" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="of-hidden-2 svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+			</div>
+		</div>
+	</div>
+	<!-- Podmenu dla O nas -->
+<div class="menu-hidden-2-mobile" id="menu-hidden-2-mobile">
+	<a href="podstrony/poznaj-nas.html" class="menu-link">
+		<p class="menu-link2-mobile podmenu">
+			Poznaj Nas
+		</p>
+	</a>
+</div>
+<!-- Koniec Podmenu dla O nas -->
+	<div class="menu-outside">
+		<a name="aktualnosci" class="menu-link">
+			<div id="info-width" class="menu-item">
+				<div>
+					Aktualnosci
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="menu-outside">
+		<a name="kontakt" class="menu-link">
+			<div id="kontakt-width" class="menu-item">
+				<div>
+					Kontakt
+				</div>
+			</div>
+		</a>
+	</div>
+	</div>
+	<div id="loader">
+				<div id="progress" style="width:0%"></div>
+			</div>
+</div>
+<!-- Podmenu dla Nasza Oferta -->
+<div class="menu-hidden" id="menu-hidden">
+	<a href="podstrony/zaj-poczatkujacych.html" class="menu-link">
+		<p class="menu-link podmenu">
+			Zajęcia dla początkujących
+		</p>
+	</a>
+	<a href="podstrony/zaj-zaawansowanych.html" class="menu-link">
+		<p class="menu-link podmenu">
+			Zajęcia dla średnio zaawansowanych
+		</p>
+	</a>
+	<a href="podstrony/zaj-weterani.html" class="menu-link">
+		<p class="menu-link podmenu">
+			Zajęcia dla weteranów
+		</p>
+	</a>
+	<a href="podstrony/jak-dolaczyc.html" class="menu-link">
+		<p class="menu-link podmenu">
+			Jak do nas dołączyc?
+		</p>
+	</a>
+</div>
+<!-- Koniec Podmenu dla Nasza Oferta -->
+<!-- Podmenu dla O nas -->
+<div class="menu-hidden-2" id="menu-hidden-2">
+	<a href="podstrony/poznaj-nas.html" class="menu-link">
+		<p class="menu-link podmenu">
+			Poznaj Nas
+		</p>
+	</a>
+</div>
+<!-- Koniec Podmenu dla O nas -->
+<section class="image">
+	<div class="image1-text">
+		<h1>
+			Paczkowskie Koło PZW Zaprasza
+		</h1>
+	</div>
+</section>
+<section class="text1" id="oferty-link">
+	<h1 id="oferty">
+		Nasza oferta
+	</h1>
+	<p>
+	Każdy członek naszego koła może uczestniczyć zajęciach poniższych zajęciach:
+	</p>
+	<div class="oferty">
+		<div class="of">
+			<div class="zd1">
+		
+			</div>
+			<div class="zd1-text">
+				<div>
+					<h2>
+						Zajęcia dla początkujących
+					</h2>
+					<br/>
+					<h5>
+						Zacznij się uczyć z nami!
+					</h5>
+					<br/>
+					<a href="podstrony/zaj-poczatkujacych.html">
+						<button>Kontakt</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="of">
+			<div class="zd2-text">
+				<div>
+					<h2>
+						Zajęcia dla średnio zaawansowanych
+					</h2>
+					<br/>
+					<h5>
+						Wędkuj z nami
+					</h5>
+					<br/>
+					<a href="podstrony/zaj-zaawansowanych.html">
+						<button>Kontakt</button>
+					</a>
+				</div>
+			</div>
+			<div class="zd2">
+		
+			</div>
+		</div>
+		<div class="of">
+			<div class="zd3">
+		
+			</div>
+			<div class="zd3-text">
+				<div>
+					<h2>
+						Zajęcia dla weteranów
+					</h2>
+					<br/>
+					<h5>
+						Podziel się doświadczeniem
+					</h5>
+					<br/>
+					<a href="podstrony/zaj-weterani.html">
+						<button>Kontakt</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="podstrony/jak-dolaczyc.html">
+		<button class="dowsw" id="dowsw">Jak do nas dołączyć?</button>
+	</a>
+</section>
+<section class="text2" id="onas-link">
+	<h1>
+		O nas
+	</h1>
+	<p id="toleft">
+		PZW działa od 2000 roku jako miejsce, 
+		w którym fani mogą się spotkać i podzielić swoją pasją. 
+		Chcemy stworzyć przyjazne środowisko, w którym każdy może czuć się dobrze.
+		Wciąż szukamy nowych wędkarzy, lub starszych wyjadaczy chętnych nowych wrażeń. Oganizujemy zawody, konkursy i wspólne wyjazdy.
+		<br/>
+		<br/>
+		Nasze unikatowe podejście oraz wykwalifikowana kadra sprawia, że to koło to najlepsze miejsce do nauki w Paczkowie.
+	</p>
+	<a href="podstrony/poznaj-nas.html">
+	<button class="onas">Poznaj nas</button>
+	</a>
+</section>
+<section class="image-under-text">
+</section>
+<section class="text3" id="aktualnosci">
+	<h1>
+		Aktualności
+	</h1>
+	<div class="aktualnosci">
+		<div>
+			<div><p class="document"></p></div>
+			<div>
+				<h3>Zarybianie <i>[ 11.01.2020 ]</i></h3>
+				<p>
+				Dnia 10.01.2020 odbyło się pierwsze zarybianie stawy niedaleko basenu.<br/>
+				Wydarzenie zaczęło się o godzinie 12 i dzięki waszej pomocy wszystko zakończyło się w przeciągu 4 godzin ...
+				</p>
+				<button name="zarybianie" class="info-news">Czytaj więcej</button>
+			</div>
+		</div>
+		<div>
+			<div><p class="document"></div>
+			<div>
+				<h3>Otwarcie nowego sezonu <i>[ 13.01.2020 ]</i></h3>
+				<p>
+				Nasze coroczne wędkownie z okazji przyjęcia nowego roku z wędką odbyły się 12.01.2020 na jeziorze Otmuchowskim.<br/>
+				Zebraliśmy się w 20-osobowej grupię i wspólnie wędkowaliśmy ...
+				</p>
+				<button name="nowy-sezon" class="info-news">Czytaj więcej</button>
+			</div>
+		</div>
+		<div>
+			<div><p class="document"></div>
+			<div>
+				<h3>Wkrótce pierwsze zawody <i>[ 17.01.2020 ]</i></h3>
+				<p>
+				Chcielibyśmy ogłosić zawody które odbędą się 1.02.2020 na rzece Nysie-Kłodziej niedaleko mostu.<br/>
+				Będą to pierwsze zawody w tym roku, liczymy na duże zainteresowanie z waszej strony ...
+				</p>
+				<button name="piewsze-zawody" class="info-news">Czytaj więcej</button>
+				</div>
+		</div>
+	</div>
+<div id="info-news">
+</div>
+</section>
+<section class="text4" id="kontakt">
+	<h1>
+		Kontakt
+	</h1>
+	<div>
+		<a title="Kliknij aby wyznaczyć trase!" href="https://www.google.com/maps/place/Polski+Zwi%C4%85zek+W%C4%99dkarski.+Ko%C5%82o/@50.4627043,17.008839,17.5z/data=!4m5!3m4!1s0x4711dfa4cd7e91e9:0xfe2169fa3424df71!8m2!3d50.4627833!4d17.0092774" target="_blanck"><div class="mapa"></div></a>
+		<div class="kontakt-info">
+		Wojska Polskiego 20, 48-370 Paczków<br/>
+		pzw-paczkow@gmail.com<br/>
+		(+48) 123 456 789
+		</div>
+	</div>
+	<div class="both">
+	<p>
+	<a href="https://pl-pl.facebook.com/pages/category/Community-Organization/Ko%C5%82o-PZW-Paczk%C3%B3w-230081277398545/" target="_blanck" class="facebook"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+	</p>
+	</div>
+</section>
+<footer>
+©2020 by Szymon Ruducha.
+</footer>
+</body>
+</html>
+<script src="public/js/script.js"></script>
