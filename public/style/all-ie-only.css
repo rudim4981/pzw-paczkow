@@ -43,4 +43,14 @@ div.menu-item > div > svg {
     transition: .3s;
     cursor: pointer;
 }
+        .zajecia1-zdjecie {
+    display: none;
+}
+       .zajecia2-zdjecie {
+    display: none;
+}
+        .zajecia3-zdjecie {
+    display: none;
+}
+
 }
