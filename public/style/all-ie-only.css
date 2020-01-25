@@ -55,4 +55,8 @@ div.menu-item > div > svg {
     .text1 > a{
     clear: both !important;
     }
+    div.oferty {
+    clear: both !important;
+}
+
 }
