@@ -9,6 +9,10 @@ div.menu-item > div > svg {
     margin-top: -70px !important;
     margin-left: 70px !important;
 }
+    div.of {
+    height: auto !important;
+}
+
  .menu-item {
     width:unset !important;
     display: inline-block !important;
@@ -52,8 +56,4 @@ div.menu-item > div > svg {
         .zajecia3-zdjecie {
     display: none;
 }
-div.of {
-    height: auto !important;
-}
-
 }
