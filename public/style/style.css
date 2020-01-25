@@ -513,6 +513,7 @@ div#info-news{
 	transition: 1s;
 	color: transparent;
     font-size: 0px;
+display: none;
 }
 div.active{
     width: 40% !important;
