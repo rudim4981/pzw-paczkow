@@ -52,7 +52,7 @@ div.menu-item > div > svg {
         .zajecia3-zdjecie {
     display: none;
 }
-div.oferty > div {
+div.oferty.of {
     height: auto !important;
 }
 
