@@ -12,7 +12,9 @@ div.menu-item > div > svg {
     div.of {
     height: auto !important;
 }
-
+.image1-text {
+    margin-top: 19% !important;
+}
  .menu-item {
     width:unset !important;
     display: inline-block !important;
@@ -25,6 +27,7 @@ div.menu-item > div > svg {
 }
     section.image {
     background-color: rgb(240,244,247);
+    height: 700px !important;
 }
     .zd1, .zd2, .zd3{
     display: none
