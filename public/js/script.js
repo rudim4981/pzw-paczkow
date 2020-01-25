@@ -347,11 +347,9 @@ else if(this.name == "piewsze-zawody")
 	 tekst += "Chcielibyśmy ogłosić zawody które odbędą się 1.02.2020 o 7:00 na rzece Nysie-Kłodziej niedaleko mostu.</br>Będą to pierwsze zawody w tym roku, liczymy na duże zainteresowanie z waszej strony. Jak zwykle będziecie mogli liczyć na świetne nagrody, których jak na razie nie ujawnimy."
 $('#info-news').html(tekst);
 $('#info-news').addClass("active");
-$('#info-news').css('display','block');
 $(window).scrollTop($('#info-news').offset().top-200);
 $('#svg').click(function(){
 $('#info-news').removeClass("active");
 $('#svg').css('display','none');
-$('#info-news').css('display','none');
 });
 });
