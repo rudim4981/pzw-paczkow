@@ -352,5 +352,6 @@ $(window).scrollTop($('#info-news').offset().top-200);
 $('#svg').click(function(){
 $('#info-news').removeClass("active");
 $('#svg').css('display','none');
+$('#info-news').css('display','none');
 });
 });
