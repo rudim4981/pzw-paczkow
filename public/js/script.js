@@ -102,7 +102,7 @@ $('section').on('click', function(){
 			function menu() {
 			if((document.body.getBoundingClientRect().top > -125) && (scrollPos <= 0)){
 					document.getElementById('info').className = 'def';
-					document.getElementById('info').style.top=document.body.getBoundingClientRect().top;
+					document.getElementById('info').style.top=document.body.getBoundingClientRect().top+'px';
 				}
 				
 				else{
