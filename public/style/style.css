@@ -507,13 +507,12 @@ div#info-news{
 	width: 20%;
     margin: 0px auto;
     text-align: center;
-    background-color: rgb(240,244,247);
     padding: 0px;
     border: 0px solid rgb(255,137,50);
 	transition: 1s;
 	color: transparent;
     font-size: 0px;
-display: none;
+    background-color: transparent;
 }
 div.active{
     width: 40% !important;
@@ -525,6 +524,7 @@ div.active{
 	transition: 1s;
     color: #0E1F58 !important;
     font-size: 20px !important;
+background-color: rgb(240,244,247) !important;
 }
 div.aktualnosci > div > div > button{
     height: 50px;
