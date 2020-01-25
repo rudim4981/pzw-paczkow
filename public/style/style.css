@@ -561,6 +561,7 @@ div.aktualnosci > div{
     float: left;
     background-color: rgb(240,244,247);
     margin: 0 1.667%;
+height: inherit;
 }
 .document:after{
     content: "\f1ea";
