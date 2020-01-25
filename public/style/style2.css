@@ -167,3 +167,6 @@ section.jakdolaczyc {
     width: 100%;
     padding: 50px !important;
 }
+div.aktualnosci > div {
+    height: 28% !important;
+}
