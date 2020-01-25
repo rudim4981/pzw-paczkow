@@ -499,6 +499,7 @@ div.aktualnosci{
 div.aktualnosci > div > div:last-of-type{
     height: 69%;
     text-align: justify;
+    position: relative;
 }
 div#info-news{
 	transition: 2s;
