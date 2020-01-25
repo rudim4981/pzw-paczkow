@@ -34,14 +34,7 @@ div.menu-item > div > svg {
     }
     section.image-under-text {
     display: none;
-.text3 > div > svg {
-    height: 21px;
-    float: right;
-    margin-top: -60px;
-    margin-right: -430px;
-    transition: .3s;
-    cursor: pointer;
-}
+    }
 .text3 > div > svg {
     height: 21px;
     float: right;
