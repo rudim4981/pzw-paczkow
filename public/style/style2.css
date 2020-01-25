@@ -8,6 +8,10 @@ section.image {
 .image1-text {
     top: 500px !important;
 }
+div.aktualnosci > div > div:last-of-type{
+    width: 90%;
+    position: absolute;
+}
 .menu-all-avtive {
     position: fixed;
     background-color: white;
