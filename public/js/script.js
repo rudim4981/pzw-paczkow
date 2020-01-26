@@ -142,7 +142,7 @@ function menuActiveItem() {
 // a bez href #
 function linkWithout(){
 	$( 'a.menu-link' ).click( function() {
-	$( window ).scrollTop( $( '#' + this.name ).offset().top);
+	$( window ).scrollTop( $( '#' + $('a.menu-link').attr('data-name') ).offset().top);
 	} );
 }
 
