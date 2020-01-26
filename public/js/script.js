@@ -207,13 +207,11 @@ function onScrollDisable() {
 
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
-window.onload = function() {
-	progress();
-	linkWithout();
-	onScrollDisable();
-	MenuSkaling();
-	displayNews();
-}
+progress();
+linkWithout();
+onScrollDisable();
+MenuSkaling();
+displayNews();
 $( window ).scroll( function() {
 	textToLeft();
 	animateOf();
