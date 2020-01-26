@@ -434,7 +434,7 @@ a.menu-link {
 }
 .top {
 	position: fixed;
-	top: -150px !important;
+	top: -80px !important;
 	transition: top .2s ease-out;
 	transition: top .2s ease-out;
 }
