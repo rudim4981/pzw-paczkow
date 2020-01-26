@@ -208,8 +208,6 @@ function onScrollDisable() {
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
 window.onload = function() {
-	textToLeft();
-	animateOf();
 	progress();
 	linkWithout();
 	onScrollDisable();
@@ -224,7 +222,7 @@ $( window ).scroll( function() {
 	menuActiveItem();
 	onScrollDisable();
 });
-$( document ).ready( function() {
+$( document ).redy( function() {
 	if( document.body.getBoundingClientRect().width > 600 ) {
 		$( window ).scroll( function() {
 			getViewportHeight();
