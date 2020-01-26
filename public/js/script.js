@@ -212,7 +212,6 @@ window.onload = function() {
 	animateOf();
 	progress();
 	linkWithout();
-	menuActiveItem();
 	onScrollDisable();
 	MenuSkaling();
 	displayNews();
@@ -227,9 +226,11 @@ $( window ).scroll( function() {
 });
 if( document.body.getBoundingClientRect().width > 600 ) {
 	$( window ).scroll( function() {
+		$( document ).redy( function() {
 		getViewportHeight();
 		getViewportScroll();
 		paralaksImages();
+		} );
 		menu();
 	} );
 }
