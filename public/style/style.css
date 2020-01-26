@@ -12,9 +12,7 @@ body{
 }
 header{
 	color: rgb(14, 31, 88);
-	height: 125px;
     text-align: center;
-    line-height: 125px;
 }
 header > h1{
 	font-weight: 100;
