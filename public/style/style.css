@@ -755,7 +755,7 @@ div.oferty > div > div {
 	cursor: pointer;
 	transition: all .5s;
 }
-.zd1-text > div > a > button:hover{
+.zd1-text > div > button:hover{
     background-color: rgb(221,229,255) !important;
     color: rgb(14,31,88) !important;
 }
@@ -784,7 +784,7 @@ div.oferty > div > div {
 	cursor: pointer;
 	transition: all .5s;
 }
-.zd2-text > div > a > button:hover{
+.zd2-text > div > button:hover{
     background-color: rgb(14,31,88) !important;
     color: rgb(255,137,50) !important;
 }
@@ -813,7 +813,7 @@ div.oferty > div > div {
 	cursor: pointer;
 	transition: all .5s;
 }
-.zd3-text > div > a > button:hover{
+.zd3-text > div > button:hover{
     background-color: rgb(255,137,50) !important;
     color: rgb(221,229,255) !important;
 }
