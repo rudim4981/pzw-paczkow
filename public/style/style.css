@@ -187,7 +187,7 @@ div.menu-hidden-top-1{
     left: 14%;
     background-color: rgb(230, 230, 230);
     border-radius: 0 0 15px 15px;
-	top: 50px !important;
+	top: 64px !important;
 	transition: .4s;
 	z-index:1;
 }
