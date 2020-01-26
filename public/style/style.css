@@ -603,7 +603,7 @@ div.image-under-text{
     font-size: 32px;
     text-shadow: 1px 1px 8px orangered;
 }
-.text1 > h1{
+.text1 > h2{
 	text-align: center;
     font-size: 44px;
     color: transparent;
