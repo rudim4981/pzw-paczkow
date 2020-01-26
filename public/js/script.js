@@ -224,21 +224,21 @@ $( window ).scroll( function() {
 	menuActiveItem();
 	onScrollDisable();
 });
-if( document.body.getBoundingClientRect().width > 600 ) {
-	$( window ).scroll( function() {
-		$( document ).redy( function() {
-		getViewportHeight();
-		getViewportScroll();
-		paralaksImages();
+$( document ).redy( function() {
+	if( document.body.getBoundingClientRect().width > 600 ) {
+		$( window ).scroll( function() {
+			getViewportHeight();
+			getViewportScroll();
+			paralaksImages();
+			menu();
 		} );
-		menu();
-	} );
-}
-if( document.body.getBoundingClientRect().width > 1024 ) {
-}else if( ( document.body.getBoundingClientRect().width > 600 ) && ( document.body.getBoundingClientRect().width < 1024 ) ) {
-	
-}else if( document.body.getBoundingClientRect().width <= 600 ) {
-	menuMobile();
-	addClass();
-	removeClass();
-}
+	}
+	if( document.body.getBoundingClientRect().width > 1024 ) {
+	}else if( ( document.body.getBoundingClientRect().width > 600 ) && ( document.body.getBoundingClientRect().width < 1024 ) ) {
+		
+	}else if( document.body.getBoundingClientRect().width <= 600 ) {
+		menuMobile();
+		addClass();
+		removeClass();
+	}
+} );
