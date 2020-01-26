@@ -38,10 +38,6 @@ div.aktualnosci > div > div:last-of-type{
     height: 100%;
     align-self: center;
 }
-header {
-    height: 75px;
-    line-height: 75px;
-}
 .text1 > h1{
 	padding: 50px 0;
 }
