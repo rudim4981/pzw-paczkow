@@ -224,7 +224,7 @@ $( window ).scroll( function() {
 	menuActiveItem();
 	onScrollDisable();
 });
-$( document ).redy( function() {
+$( document ).ready( function() {
 	if( document.body.getBoundingClientRect().width > 600 ) {
 		$( window ).scroll( function() {
 			getViewportHeight();
