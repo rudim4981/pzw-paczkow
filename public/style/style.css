@@ -161,7 +161,7 @@ div.both-jakdolaczyc{
     padding-bottom: 30px;
     padding-top: 25px;
 }
-div.menu-hidden{
+div.menu-hidden-1{
 	position: fixed;
     width: 13%;
     text-align: center;
@@ -179,7 +179,7 @@ p.podmenu{
     border-bottom: 1px solid grey;
 	font-size: 0.7em;
 }
-div.menu-hidden-top{
+div.menu-hidden-top-1{
 	position: fixed;
     width: 13%;
     text-align: center;
