@@ -775,7 +775,7 @@ div.oferty > div > div {
 	color: rgb(14,31,88);
     font-weight: 100;
 }
-.zd2-text > div > a > button{
+.zd2-text > div > button{
     height: 40px;
     width: 130px;
     background-color: transparent;
@@ -804,7 +804,7 @@ div.oferty > div > div {
 	color: rgb(255,137,50);
     font-weight: 100;
 }
-.zd3-text > div > a > button{
+.zd3-text > div > button{
     height: 40px;
     width: 130px;
     background-color: transparent;
