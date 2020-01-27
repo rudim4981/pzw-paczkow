@@ -28,27 +28,7 @@ function menu() {
 //Skalowanie odległoście menu od górnej krawędzi
 function MenuSkaling(){
 // Dla podmenu
-	$('svg').click(function(){
-		if( ( -document.body.getBoundingClientRect().top >= 0 ) && ( -document.body.getBoundingClientRect().top < 80 ) ) {
-			document.getElementById( $( this ).attr( 'data-info' ) ).style.top =  ( 140 + document.body.getBoundingClientRect().top ) + 'px';
-		}
-		//else if( ( -document.body.getBoundingClientRect().top >= 80 ) && ( -document.body.getBoundingClientRect().top < 135 ) ) {
-		//	document.getElementById( $( this ).attr( 'data-info' ) ).style.top = 97 -( -( document.body.getBoundingClientRect().top ) - 75 ) + 'px';
-		//}
-		else {
-			document.getElementById( $( this ).attr( 'data-info' ) ).style.top = "none";
-			document.getElementById( $( this ).attr( 'data-info' ) ).className = $( this ).attr( 'data-info2' );
-		}
-		if( $( this ).attr( 'data-cart' ) == 'def' ) {
-			$( this ).attr( "id" , "rotate" );
-			$( this ).attr( 'data-cart' , 'up' );
-		}else if( $( this ).attr( 'data-cart' ) == 'up' ) {
-			$( $( this ) ).removeAttr( "id" , "rotate" );
-			document.getElementById( $( this ).attr( 'data-info' ) ).style.removeProperty( 'top' );
-			document.getElementById( $( this ).attr( 'data-info' ) ).className = $( this ).attr( 'data-info' );
-			$( $( this ) ).attr( 'data-cart' , 'def' );
-		}
-	});
+	
 };
 
 // pobranie wysokosci dokumentu do paralaksy
