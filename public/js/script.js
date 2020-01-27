@@ -227,8 +227,6 @@ $( window ).scroll( function() {
 $( document ).ready( function() {
 	if( document.body.getBoundingClientRect().width > 600 ) {
 		$( window ).scroll( function() {
-			getViewportHeight();
-			getViewportScroll();
 			paralaksImages();
 			menu();
 		} );
