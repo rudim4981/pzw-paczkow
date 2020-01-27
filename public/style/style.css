@@ -437,6 +437,7 @@ a.menu-link {
 	top: -80px !important;
 	transition: top .2s ease-out;
 	transition: top .2s ease-out;
+        box-shadow: black 0px 2px 12px;
 }
 .bottom {
 	position: fixed;
