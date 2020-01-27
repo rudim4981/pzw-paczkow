@@ -230,7 +230,6 @@ $( document ).ready( function() {
 			paralaksImages();
 			menu();
 		} );
-	MenuSkaling();
 	}
 	if( document.body.getBoundingClientRect().width > 1024 ) {
 	}else if( ( document.body.getBoundingClientRect().width > 600 ) && ( document.body.getBoundingClientRect().width < 1024 ) ) {
@@ -239,5 +238,6 @@ $( document ).ready( function() {
 		menuMobile();
 		addClass();
 		removeClass();
+		MenuSkaling();
 	}
 } );
