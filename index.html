@@ -35,6 +35,9 @@ ul > li > ul{
     padding-inline-start: 0;
     position: absolute;
 }
+.li-podmenu > li > a{
+	font-size: 15px !important;
+}
 </style>
 </head>
 <body>
@@ -52,7 +55,7 @@ ul > li > ul{
 	<div class="menu-all">
 		<ul class="menu">
 			<li><a data-name="oferty-link" class="menu-link">Nasza oferta</a>
-				<ul>
+				<ul class="li-podmenu">
 					<li><a href="podstrony/zaj-poczatkujacych.html" class="menu-link">Zajęcia dla początkujących</a></li>
 					<li><a href="podstrony/zaj-zaawansowanych.html" class="menu-link">Zajęcia dla średnio zaawansowanych</a></li>
 					<li><a href="podstrony/zaj-weterani.html" class="menu-link">Zajęcia dla weteranów</a></li>
@@ -60,7 +63,7 @@ ul > li > ul{
 				</ul>
 			</li>
 			<li><a data-name="onas-link" class="menu-link">O nas</a>
-				<ul>
+				<ul class="li-podmenu">
 					<li><a href="podstrony/poznaj-nas.html" class="menu-link">Poznaj Nas</a></li>
 				</ul>
 			</li>
