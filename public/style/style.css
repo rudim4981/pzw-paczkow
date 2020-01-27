@@ -35,7 +35,7 @@ div.menu-item > div > svg{
     margin-top: -42px;
     margin-left: 107px;
 }
-li.menu > svg{
+li.li-menu > svg{
 	padding: 10px;
 	height: 25px;
     margin-bottom: -6px;
@@ -44,7 +44,7 @@ li.menu > svg{
     margin-top: -42px;
     margin-left: 107px;
 }
-li.menu > svg#rotate{
+li.li-menu > svg#rotate{
 	transform: rotate(180deg);
 	color: rgb(255,137,50);
 }
