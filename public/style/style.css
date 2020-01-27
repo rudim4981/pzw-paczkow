@@ -27,13 +27,12 @@ p.menu-link{
     margin-block-end: 0.4em;
 }
 div.menu-item > div > svg{
-	padding: 10px;
-	height: 25px;
-    margin-bottom: -6px;
+    padding: 10px;
+    height: 25px;
     cursor: pointer;
     position: absolute;
-    margin-top: -42px;
-    margin-left: 107px;
+    margin-top: -10px;
+transition: .2s;
 }
 li.li-menu > svg{
 	padding: 10px;
@@ -43,14 +42,21 @@ li.li-menu > svg{
     position: absolute;
     margin-top: -42px;
     margin-left: 107px;
+	transition: .2s;
+}
+li.li-menu > svg:hover{
+	color: orange;
+	transition: .2s;
 }
 li.li-menu > svg#rotate{
 	transform: rotate(180deg);
 	color: rgb(255,137,50);
+	transition: .2s;
 }
 div.menu-item > div > svg#rotate {
 	transform: rotate(180deg);
 	color: rgb(255,137,50);
+	transition: .2s;
 }
 footer.zaj{
 	text-align: center;
