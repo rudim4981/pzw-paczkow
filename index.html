@@ -21,6 +21,11 @@
 	$( document ).ready(function(){
 	$('svg.li-menu-up-1').click(function(){
 		if($(this).attr('data-cart')== 'def'){
+			if($('svg.li-menu-up-1').attr('data-cart')== 'up'){
+			$('svg.li-menu-up-1').attr('data-cart','def');
+			$('svg.li-menu-up-1').parent().removeClass('active');
+			$('svg.li-menu-up-1').removeAttr('id','rotate');
+			}
 			$(this).attr('data-cart','up');
 			$(this).parent().addClass('active');
 			$(this).attr('id','rotate');
