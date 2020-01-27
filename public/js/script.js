@@ -212,6 +212,9 @@ window.onload = function() {
 	linkWithout();
 	onScrollDisable();
 	displayNews();
+	getViewportHeight();
+	getViewportScroll();
+	paralaksImages();
 }
 $( window ).scroll( function() {
 	textToLeft();
