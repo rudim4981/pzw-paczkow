@@ -211,7 +211,6 @@ window.onload = function() {
 	progress();
 	linkWithout();
 	onScrollDisable();
-	MenuSkaling();
 	displayNews();
 }
 $( window ).scroll( function() {
@@ -229,6 +228,7 @@ $( document ).ready( function() {
 			getViewportScroll();
 			paralaksImages();
 			menu();
+			MenuSkaling();
 		} );
 	}
 	if( document.body.getBoundingClientRect().width > 1024 ) {
