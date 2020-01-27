@@ -210,7 +210,7 @@ $( 'section' ).click( function() { onScrollDisable() } );
 window.onload = function() {
 	progress();
 	linkWithout();
-	onScrollDisable();
+	//onScrollDisable();
 	displayNews();
 	getViewportHeight();
 	getViewportScroll();
@@ -222,7 +222,7 @@ $( window ).scroll( function() {
 	progress();
 	linkWithout();
 	menuActiveItem();
-	onScrollDisable();
+	//onScrollDisable();
 });
 $( document ).ready( function() {
 	if( document.body.getBoundingClientRect().width > 600 ) {
@@ -230,6 +230,7 @@ $( document ).ready( function() {
 			paralaksImages();
 			menu();
 		} );
+		//MenuSkaling();
 	}
 	if( document.body.getBoundingClientRect().width > 1024 ) {
 	}else if( ( document.body.getBoundingClientRect().width > 600 ) && ( document.body.getBoundingClientRect().width < 1024 ) ) {
@@ -238,6 +239,5 @@ $( document ).ready( function() {
 		menuMobile();
 		addClass();
 		removeClass();
-		MenuSkaling();
 	}
 } );
