@@ -35,6 +35,19 @@ div.menu-item > div > svg{
     margin-top: -42px;
     margin-left: 107px;
 }
+li.menu > svg{
+	padding: 10px;
+	height: 25px;
+    margin-bottom: -6px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 107px;
+}
+li.menu > svg#rotate{
+	transform: rotate(180deg);
+	color: rgb(255,137,50);
+}
 div.menu-item > div > svg#rotate {
 	transform: rotate(180deg);
 	color: rgb(255,137,50);
