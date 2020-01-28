@@ -626,6 +626,10 @@ div.image-under-text{
 	display: inline-flex;
     align-items: center;
 }
+.image-text > h2{
+    margin-left: auto;
+    margin-right: auto;
+}
 .text1 > h2{
 	text-align: center;
     font-size: 44px;
