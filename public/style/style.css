@@ -20,6 +20,12 @@ header > h1{
 	font-weight: 100;
     font-size: 35px;
 }
+.tel {
+    display: none !important;
+}
+.monitors{
+	display: block !important;
+}
 p.menu-link{
     margin-block-start: 0em;
     width: 100%;
