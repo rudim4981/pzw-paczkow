@@ -238,7 +238,7 @@ $( document ).ready( function() {
 		menuMobile();
 		addClass();
 		removeClass();
-		
+		displayNews();
 		window.onload = function() {
 			progress();
 			linkWithout();
