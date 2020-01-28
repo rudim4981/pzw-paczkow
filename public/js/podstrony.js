@@ -24,7 +24,7 @@ $(window).load(function() {
 		$(' .whenload ').css('opacity','0');
 	setTimeout(function() {
 		$(' .whenload ').css('display','none');
-	}, 1500);
+	}, 1000);
 	});
 
 
