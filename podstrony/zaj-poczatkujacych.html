@@ -19,7 +19,7 @@
 	PZW
 </title>
 <script>
-	$( window ).ready(function(){
+	$( window ).ready(function(){scr()});
 		var scrollPos = 0;
 		window.onscroll =  function() {scr()};
 		window.onload = function() {scr()};
@@ -36,7 +36,6 @@
 			menu();
 			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
 		}
-	} );
 </script>
 </head>
 <body>
