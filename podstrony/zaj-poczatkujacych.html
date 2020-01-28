@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
 <meta name="author" content="Szymon Ruducha">
@@ -7,6 +7,7 @@
 <meta name="keywords" content="HTML,CSS,JavaScript">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../public/js/podstrony.js"></script>
 <link rel="shortcut icon" href="../public/images/ikona.jpeg" type="image/x-icon">
 <link rel="stylesheet" href="../public/style/style.css" type="text/css">
 <link rel="stylesheet" type="text/css" href="../public/style/style2.css" media="(max-width: 600px)">
@@ -18,25 +19,6 @@
 <title>
 	PZW
 </title>
-<script>
-	$( window ).ready(function(){scr()});
-		var scrollPos = 0;
-		window.onscroll =  function() {scr()};
-		window.onload = function() {scr()};
-		function menu() {
-			if((document.body.getBoundingClientRect().top > -125) && (scrollPos <= 0)){
-				document.getElementById('info').className = 'def';
-				document.getElementById('info').style.top=document.body.getBoundingClientRect().top;
-			}else{
-				document.getElementById('info').className = 'top';
-			}
-			scrollPos = (document.body.getBoundingClientRect()).top;
-		};
-		function scr(){
-			menu();
-			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
-		}
-</script>
 </head>
 <body>
 <div class="menu" id="info">
