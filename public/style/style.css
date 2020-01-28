@@ -97,6 +97,7 @@ li.li-menu > svg{
     position: absolute;
     margin-top: -10px;
 transition: .2s;
+	width: 25px;
 }
 li.li-menu > svg:hover{
 	color: orange;
