@@ -72,7 +72,7 @@ header > h1{
     background-color: lightgray;
     z-index: 10000;
     top: 0;
-	transition: 1.5s;
+	transition: 1s;
 }
 p.menu-link{
     margin-block-start: 0em;
