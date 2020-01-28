@@ -228,7 +228,7 @@ $( document ).ready( function() {
 	}
 	if( document.body.getBoundingClientRect().width > 600 ) {
 	window.onload = function() {
-	$('.image-under-text').css('height',$('.image-under-text').width()/2.2);
+	$('.image-under-text').css('height',$('.image-under-text').width()/2.6);
 	progress();
 	linkWithout();
 	//onScrollDisable();
@@ -239,7 +239,7 @@ $( document ).ready( function() {
 }	
 	}else if( document.body.getBoundingClientRect().width <= 600 ) {
 		menuMobile();
-		$('.image-under-text').css('height',$('.image-under-text').width()/2.2);
+		$('.image-under-text').css('height',$('.image-under-text').width()/2.6);
 		addClass();
 		removeClass();
 		displayNews();
