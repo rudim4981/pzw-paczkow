@@ -15,6 +15,7 @@
 			for(var i=0;i<$('.instruktor').length;i++){
 			if($('.instruktor').eq(i).offset().top-innerHeight < -document.body.getBoundingClientRect().top)
 				$('.instruktor').eq(i).css('margin-left','0%');
+			}
 			menu();
 			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
 		}
