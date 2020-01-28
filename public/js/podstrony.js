@@ -19,7 +19,7 @@
 			menu();
 			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
 		}
-window.load = alert("I'm ready!!!");
+window.onload = function(){ alert("I'm ready!!!"); }
 
 
 
