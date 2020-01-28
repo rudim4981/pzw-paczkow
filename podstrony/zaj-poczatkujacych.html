@@ -18,6 +18,26 @@
 <title>
 	PZW
 </title>
+<script>
+	$( window ).ready(function(){
+		var scrollPos = 0;
+		window.onscroll =  function() {scr()};
+		window.onload = function() {scr()};
+		function menu() {
+			if((document.body.getBoundingClientRect().top > -125) && (scrollPos <= 0)){
+				document.getElementById('info').className = 'def';
+				document.getElementById('info').style.top=document.body.getBoundingClientRect().top;
+			}else{
+				document.getElementById('info').className = 'top';
+			}
+			scrollPos = (document.body.getBoundingClientRect()).top;
+		};
+		function scr(){
+			menu();
+			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
+		}
+	} );
+</script>
 </head>
 <body>
 <div class="menu" id="info">
@@ -29,7 +49,7 @@
 	<div class="menu-outside menu-outside-zaj1">
 			<div id="oferty-link-width" class="menu-item">
 				<div>
-				<a href="../index.html" name="oferty-link podstrony-menu" class="menu-link">
+				<a href="../index.html" class="menu-link">
 				<p class="menu-link">
 					Powrót
 				</p>
@@ -57,7 +77,7 @@
 	</section>
 	<div class="both-zaj1">
 	<p>
-	<a href="https://pl-pl.facebook.com/pages/category/Community-Organization/Ko%C5%82o-PZW-Paczk%C3%B3w-230081277398545/" target="_blanck" class="facebook"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
+	<a href="https://pl-pl.facebook.com/pages/category/Community-Organization/Ko%C5%82o-PZW-Paczk%C3%B3w-230081277398545/" target="blanck" class="facebook"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></a>
 	</p>
 	</div>
 <footer class="zaj">
@@ -65,79 +85,3 @@
 </footer>
 </body>
 </html>
-<script>
-window.onload = $('footer').next().css('display','none');
-
-			var testowa = 0;
-			var scrollPos = 0;
-			window.onscroll =  function() {scr()};
-			window.onload = function() {scr()};
-			function menu() {
-			if((document.body.getBoundingClientRect().top > -125) && (scrollPos <= 0)){
-					document.getElementById('info').className = 'def';
-					document.getElementById('info').style.top=document.body.getBoundingClientRect().top;
-				}
-				//else if(document.body.getBoundingClientRect().top < scrollPos){
-				//	document.getElementById('info').className = 'bottom';
-				//}
-				else{
-					document.getElementById('info').className = 'top';
-				}
-				scrollPos = (document.body.getBoundingClientRect()).top;
-			};
-			var last = 0;
-			function scr(){
-			menu();
-			$('.image-under-text').css('background-size',-(document.body.getBoundingClientRect()).top/18+'%');
-				function width(){
-					//if(($('.text1').prop('offsetTop') - 100 <= -(document.body.getBoundingClientRect().top)) && ($('.text1').prop('offsetTop') + $('.text1').prop('scrollHeight') > -(document.body.getBoundingClientRect().top - 100)))
-					//	$('#oferty-link-width').addClass("menu-item-active");
-					//else
-					//	$('#oferty-link-width').removeClass("menu-item-active");
-					
-				}
-				width();
-				function getViewportScroll() {
-					if(typeof window.scrollY != 'undefined') {
-						return window.scrollY;
-					}
-					if(typeof pageYOffset != 'undefined') {
-						return pageYOffset;
-					}
-					var doc = document.documentElement;
-					doc = doc.clientHeight ? doc : document.body;
-					return doc.scrollTop;
-				}
-				function getViewportHeight() {
-					var a = document.documentElement.clientHeight, b = window.innerHeight;
-					return a < b ? b : a;
-				}
-				var images = [].slice.call(document.querySelectorAll('.image'));
-				var el, elOffset, elHeight,
-				offset = getViewportScroll(),
-				vHeight = getViewportHeight();
-				for(var i in images) {
-					el = images[i];
-					elOffset = el.offsetTop;
-					elHeight = el.offsetHeight;
-					if((Math.round((elOffset - offset)*3/8) > 300) || (Math.round((elOffset - offset)*3/8) < -187	)){}
-					else
-					if((elOffset > offset + vHeight) || (elOffset + elHeight < offset)) { continue; }
-					el.style.backgroundPosition = '50% '+Math.round((elOffset - offset)*3/8)+'px';
-				}
-				var all = document.getElementsByClassName('of');    
-				if((document.body.getBoundingClientRect().top < -1500) && (testowa == 0)){
-					document.getElementById('toleft').style.paddingLeft= 0;
-					document.getElementById('toleft').style.paddingRight= 400 + 'px';
-					setTimeout(function(){ document.getElementById('toleft').style.paddingRight= 0; }, 600);
-					testowa = 1;
-				}
-				
-				if(document.body.getBoundingClientRect().top < -200){
-					for (var i = 0; i < all.length; i++) {
-						all[i].style.marginLeft = 0;
-					}
-				}
-				document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
-			}
-		</script>
