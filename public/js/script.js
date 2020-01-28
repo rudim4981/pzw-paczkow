@@ -207,15 +207,7 @@ function onScrollDisable() {
 
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
-window.onload = function() {
-	progress();
-	linkWithout();
-	//onScrollDisable();
-	displayNews();
-	getViewportHeight();
-	getViewportScroll();
-	paralaksImages();
-}
+
 $( window ).scroll( function() {
 	textToLeft();
 	animateOf();
@@ -232,12 +224,26 @@ $( document ).ready( function() {
 		} );
 		//MenuSkaling();
 	}
-	if( document.body.getBoundingClientRect().width > 1024 ) {
-	}else if( ( document.body.getBoundingClientRect().width > 600 ) && ( document.body.getBoundingClientRect().width < 1024 ) ) {
-		
+	if( document.body.getBoundingClientRect().width > 600 ) {
+	window.onload = function() {
+	progress();
+	linkWithout();
+	//onScrollDisable();
+	displayNews();
+	getViewportHeight();
+	getViewportScroll();
+	paralaksImages();
+}	
 	}else if( document.body.getBoundingClientRect().width <= 600 ) {
 		menuMobile();
 		addClass();
 		removeClass();
+		
+		window.onload = function() {
+			progress();
+			linkWithout();
+			//onScrollDisable();
+			displayNews();
+		}
 	}
 } );
