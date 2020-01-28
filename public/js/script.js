@@ -208,6 +208,7 @@ function onScrollDisable() {
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
 $( window ).resize(function(){
+	$('.image-under-text').css('height',$('.image-under-text').width()/3.6);
 });
 $( window ).scroll( function() {
 	textToLeft();
@@ -234,6 +235,7 @@ $( document ).ready( function() {
 	getViewportHeight();
 	getViewportScroll();
 	paralaksImages();
+		$('.image-under-text').css('height',$('.image-under-text').width()/3.6);
 }	
 	}else if( document.body.getBoundingClientRect().width <= 600 ) {
 		menuMobile();
@@ -245,6 +247,7 @@ $( document ).ready( function() {
 			linkWithout();
 			//onScrollDisable();
 			displayNews();
+			$('.image-under-text').css('height',$('.image-under-text').width()/3.6);
 		}
 	}
 } );
