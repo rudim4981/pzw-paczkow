@@ -30,6 +30,8 @@ header > h1{
   display: inline-block;
   width: 80px;
   height: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .lds-dual-ring:after {
  content: " ";
@@ -62,6 +64,8 @@ header > h1{
 
 
 .whenload {
+	display: flex;
+    align-items: center;
     position: fixed;
     width: 100%;
     height: 100%;
