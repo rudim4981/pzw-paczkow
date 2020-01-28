@@ -177,5 +177,5 @@ div.aktualnosci > div {
     height: 28% !important;
 }
 div.aktualnosci > div > div > button {
-    bottom: 20px !important;
+       position: relative;
 }
