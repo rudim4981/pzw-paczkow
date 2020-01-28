@@ -217,9 +217,6 @@ $( window ).scroll( function() {
 	//onScrollDisable();
 });
 $( document ).ready( function() {
-	window.onload = function(){
-		$(' .whenload ').css('display','none');
-	};
 	if( document.body.getBoundingClientRect().width > 700 ) {
 		$( window ).scroll( function() {
 			paralaksImages();
@@ -234,6 +231,7 @@ $( document ).ready( function() {
 	}
 	if( document.body.getBoundingClientRect().width > 700 ) {
 	window.onload = function() {
+	$(' .whenload ').css('display','none');
 	progress();
 	linkWithout();
 	//onScrollDisable();
@@ -248,6 +246,7 @@ $( document ).ready( function() {
 		removeClass();
 		displayNews();
 		window.onload = function() {
+			$(' .whenload ').css('display','none');
 			progress();
 			linkWithout();
 			//onScrollDisable();
