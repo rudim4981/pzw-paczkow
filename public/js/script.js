@@ -229,6 +229,7 @@ $( document ).ready( function() {
 		getViewportHeight();
 		getViewportScroll();
 		paralaksImages();
+		menu();
 	}
 	if( document.body.getBoundingClientRect().width > 600 ) {
 	window.onload = function() {
