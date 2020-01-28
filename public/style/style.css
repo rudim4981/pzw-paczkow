@@ -32,7 +32,6 @@ header > h1{
   height: 80px;
     margin-left: auto;
     margin-right: auto;
-	transaction: 1.5s;
 }
 .lds-dual-ring:after {
  content: " ";
@@ -73,6 +72,7 @@ header > h1{
     background-color: lightgray;
     z-index: 10000;
     top: 0;
+	transition: 1.5s;
 }
 p.menu-link{
     margin-block-start: 0em;
