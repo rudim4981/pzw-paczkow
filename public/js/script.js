@@ -226,6 +226,9 @@ $( document ).ready( function() {
 		} );
 		//MenuSkaling();
 		$('.image-under-text').css('height',$('.image-under-text').width()/3.6);
+		getViewportHeight();
+		getViewportScroll();
+		paralaksImages();
 	}
 	if( document.body.getBoundingClientRect().width > 600 ) {
 	window.onload = function() {
