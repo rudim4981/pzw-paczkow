@@ -225,6 +225,7 @@ $( document ).ready( function() {
 			menu();
 		} );
 		//MenuSkaling();
+		$('.image-under-text').css('height',$('.image-under-text').width()/3.6);
 	}
 	if( document.body.getBoundingClientRect().width > 600 ) {
 	window.onload = function() {
@@ -235,7 +236,6 @@ $( document ).ready( function() {
 	getViewportHeight();
 	getViewportScroll();
 	paralaksImages();
-		$('.image-under-text').css('height',$('.image-under-text').width()/3.6);
 }	
 	}else if( document.body.getBoundingClientRect().width <= 600 ) {
 		menuMobile();
@@ -247,7 +247,6 @@ $( document ).ready( function() {
 			linkWithout();
 			//onScrollDisable();
 			displayNews();
-			$('.image-under-text').css('height',$('.image-under-text').width()/3.6);
 		}
 	}
 } );
