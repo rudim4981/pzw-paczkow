@@ -26,6 +26,13 @@ header > h1{
 .monitors{
 	display: block !important;
 }
+.whenload {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    z-index: 10000;
+}
 p.menu-link{
     margin-block-start: 0em;
     width: 100%;
