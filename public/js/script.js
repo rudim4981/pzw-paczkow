@@ -230,11 +230,7 @@ $( document ).ready( function() {
 		menu();
 	}
 	if( document.body.getBoundingClientRect().width > 700 ) {
-	document.ready = function() {
-	$(' .whenload ').css('opacity','0');
-	setTimeout(function() {
-		$(' .whenload ').css('display','none');
-	}, 1500);
+	window.onload = function() {
 	progress();
 	linkWithout();
 	//onScrollDisable();
@@ -248,11 +244,7 @@ $( document ).ready( function() {
 		addClass();
 		removeClass();
 		displayNews();
-		document.ready = function() {
-			$(' .whenload ').css('opacity','0');
-			setTimeout(function() {
-				$(' .whenload ').css('display','none');
-			}, 1500);
+		window.onload = function() {
 			progress();
 			linkWithout();
 			//onScrollDisable();
@@ -260,3 +252,9 @@ $( document ).ready( function() {
 		}
 	}
 } );
+$(window).load(function() {
+		$(' .whenload ').css('opacity','0');
+	setTimeout(function() {
+		$(' .whenload ').css('display','none');
+	}, 1500);
+	});
