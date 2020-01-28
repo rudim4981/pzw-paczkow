@@ -80,14 +80,14 @@ div.oferty-jakdolaczyc{
     padding: 100px;
 	margin-top: 200px;
 }
-div.oferty-jakdolaczyc > h1{
+div.oferty-jakdolaczyc > h2{
 	font-size: 4vmin;
 }
 div.oferty-instruktorzy{
     text-align: center;
     padding: 100px;
 }
-div.oferty-instruktorzy > h1{
+div.oferty-instruktorzy > h2{
 	font-size: 4vmin;
 }
 div.left-click, div.right-click{
