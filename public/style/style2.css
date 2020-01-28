@@ -22,6 +22,12 @@ div.aktualnosci > div > div:last-of-type{
 	display: block;
 	text-align: center;
 }
+.tel {
+    display: block !important;
+}
+.monitors{
+	display: none !important;
+}
 .menu-all {
 	display: none;
 }
