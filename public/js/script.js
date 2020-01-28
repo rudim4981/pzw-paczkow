@@ -246,7 +246,10 @@ $( document ).ready( function() {
 		removeClass();
 		displayNews();
 		window.onload = function() {
-			$(' .whenload ').css('display','none');
+			$(' .whenload ').css('opacity','0');
+			setTimeout(function() {
+				$(' .whenload ').css('display','none');
+			}, 1500);
 			progress();
 			linkWithout();
 			//onScrollDisable();
