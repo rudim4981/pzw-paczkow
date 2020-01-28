@@ -19,7 +19,7 @@
 			menu();
 			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
 		}
-$( document ).load(function(){
+$( window ).load(function(){
 alert("I'm ready!!!");
 })
 
