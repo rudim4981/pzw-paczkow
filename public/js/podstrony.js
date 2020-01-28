@@ -1,5 +1,5 @@
 		var scrollPos = 0;
-    $( window ).ready(function(){scr();$( 'section.zajecia' ).css('margin-top', '200px');alert("I'm ready!!!");});
+    $( window ).ready(function(){scr();$( 'section.zajecia' ).css('margin-top', '200px');});
 		window.onscroll =  function() {scr()};
 		window.onload = function() {scr()};
 		function menu() {
@@ -19,3 +19,8 @@
 			menu();
 			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
 		}
+$( document ).ready(function(){
+alert("I'm ready!!!");
+})
+
+//.load
