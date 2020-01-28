@@ -25,7 +25,7 @@ div.aktualnosci > div > div:last-of-type{
 .monitors{
 	display: none !important;
 }
-tel-active{
+.tel-active{
 	display: block !important;
 }
 .menu-all {
