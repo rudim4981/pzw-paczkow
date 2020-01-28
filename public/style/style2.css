@@ -83,7 +83,7 @@ div.aktualnosci > div > div > p{
 	display: none;
 }
 div.aktualnosci > div > div:last-of-type {
-    height: 25%;
+	height: auto;
 }
 section#kontakt {
     padding: 1px 0 1px 0;
