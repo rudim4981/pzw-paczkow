@@ -208,7 +208,7 @@ function onScrollDisable() {
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
 $( window ).resize(function(){
-$('.image-under-text').css('height',$('.image-under-text').width()/2.2);
+$('.image-under-text').css('height',$('.image-under-text').width()/3,5);
 });
 $( window ).scroll( function() {
 	textToLeft();
