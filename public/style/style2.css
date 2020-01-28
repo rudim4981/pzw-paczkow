@@ -12,6 +12,9 @@ div.aktualnosci > div > div:last-of-type{
     width: 90%;
     position: absolute;
 }
+div.image-under-text {
+    height: 200px;
+}
 .menu-all-avtive {
     position: fixed;
     background-color: white;
