@@ -1,5 +1,5 @@
 		var scrollPos = 0;
-    $( window ).ready(function(){scr()});
+    $( window ).ready(function(){scr();$( section.zdjecia ).css('margin-top', '200px');});
 		window.onscroll =  function() {scr()};
 		window.onload = function() {scr()};
 		function menu() {
