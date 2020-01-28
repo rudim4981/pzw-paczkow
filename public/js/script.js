@@ -85,7 +85,7 @@ function paralaksImages(){
 			if( ( elOffset > offset + vHeight ) || ( elOffset + elHeight < offset ) ) { continue; }
 		el.style.backgroundPosition = '50% ' + Math.round( ( elOffset - offset )*3/8 ) + 'px';
 	}
-	$( '.image-under-text' ).css( 'background-size' , -( document.body.getBoundingClientRect() ).top/15 + '%' );
+	$( '.image-under-text' ).css( 'background-size' , -( document.body.getBoundingClientRect() ).top/12 + '%' );
 }
 
 // Napis do lewej
@@ -208,7 +208,6 @@ function onScrollDisable() {
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
 $( window ).resize(function(){
-$('.image-under-text').css('height',$('.image-under-text').width()/3,5);
 });
 $( window ).scroll( function() {
 	textToLeft();
@@ -228,7 +227,6 @@ $( document ).ready( function() {
 	}
 	if( document.body.getBoundingClientRect().width > 600 ) {
 	window.onload = function() {
-	$('.image-under-text').css('height',$('.image-under-text').width()/3,5);
 	progress();
 	linkWithout();
 	//onScrollDisable();
@@ -239,7 +237,6 @@ $( document ).ready( function() {
 }	
 	}else if( document.body.getBoundingClientRect().width <= 600 ) {
 		menuMobile();
-		$('.image-under-text').css('height',$('.image-under-text').width()/3,5);
 		addClass();
 		removeClass();
 		displayNews();
