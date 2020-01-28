@@ -497,6 +497,8 @@ section.image{
     width: 100%;
     background-attachment: fixed;
     background-position: 50% 0px;
+	display: flex;
+    align-items: center;
 }
 section.text3{
     padding: 110px 0;
@@ -615,9 +617,8 @@ div.image-under-text{
 	background-color: red;
 }
 .image1-text{
-	    position: absolute;
+	position: absolute;
     width: 100%;
-    margin-top: 33%;
     text-align: center;
     color: white;
     font-size: 32px;
