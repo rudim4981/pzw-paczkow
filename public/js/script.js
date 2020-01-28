@@ -203,7 +203,9 @@ function onScrollDisable() {
 }
 
 
-
+window.onload = function(){
+$(' .whenload ').css('display','none');
+};
 
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
