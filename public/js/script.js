@@ -219,7 +219,7 @@ $( window ).scroll( function() {
 	//onScrollDisable();
 });
 $( document ).ready( function() {
-	if( document.body.getBoundingClientRect().width > 600 ) {
+	if( document.body.getBoundingClientRect().width > 700 ) {
 		$( window ).scroll( function() {
 			paralaksImages();
 			menu();
@@ -231,7 +231,7 @@ $( document ).ready( function() {
 		paralaksImages();
 		menu();
 	}
-	if( document.body.getBoundingClientRect().width > 600 ) {
+	if( document.body.getBoundingClientRect().width > 700 ) {
 	window.onload = function() {
 	progress();
 	linkWithout();
@@ -241,7 +241,7 @@ $( document ).ready( function() {
 	getViewportScroll();
 	paralaksImages();
 }	
-	}else if( document.body.getBoundingClientRect().width <= 600 ) {
+	}else if( document.body.getBoundingClientRect().width <= 700 ) {
 		menuMobile();
 		addClass();
 		removeClass();
