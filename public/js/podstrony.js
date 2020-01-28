@@ -20,7 +20,12 @@
 			document.getElementById('progress').style.width = (((innerHeight-document.body.getBoundingClientRect().top-innerHeight))/(document.body.getBoundingClientRect().height - innerHeight))*101 + '%';
 		}
 
-window.onload = function(){ alert("I'm ready!!!"); }
+window.onload = function() {
+	$(' .whenload ').css('opacity','0');
+	setTimeout(function() {
+		$(' .whenload ').css('display','none');
+	}, 1500);
+}
 
 
 
