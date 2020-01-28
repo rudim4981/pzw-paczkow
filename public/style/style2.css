@@ -13,6 +13,9 @@ div.aktualnosci > div > div:last-of-type{
     position: absolute;
 }
 div.image-under-text {
+    background-size: cover !important;
+}
+div.image-under-text {
     height: 200px;
 }
 .menu-all-avtive {
