@@ -230,7 +230,7 @@ $( document ).ready( function() {
 		menu();
 	}
 	if( document.body.getBoundingClientRect().width > 700 ) {
-	window.onload = function() {
+	document.onload = function() {
 	$(' .whenload ').css('opacity','0');
 	setTimeout(function() {
 		$(' .whenload ').css('display','none');
@@ -248,7 +248,7 @@ $( document ).ready( function() {
 		addClass();
 		removeClass();
 		displayNews();
-		window.onload = function() {
+		document.onload = function() {
 			$(' .whenload ').css('opacity','0');
 			setTimeout(function() {
 				$(' .whenload ').css('display','none');
