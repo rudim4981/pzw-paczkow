@@ -5,12 +5,12 @@ var powturzenie2 = 1;
 function addClass() {
 	$( '#tochange' ).addClass( 'is-active' );
 	$( '#tochange' ).attr( 'onclick' , 'removeClass()' );
-	$( '.tel' ).css( 'display' , 'block !important' );
+	$( '.tel' ).addClass( 'tel-active' );
 }
 function removeClass() {
 	$( '#tochange' ).removeClass( 'is-active' );
 	$( '#tochange' ).attr( 'onclick' , 'addClass()' );
-	$( '.tel' ).css( 'display' , 'none !important' );
+	$( '.tel' ).removeClass( 'tel-active' );
 }
 
 // Zawijanie menu
