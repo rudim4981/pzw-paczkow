@@ -623,6 +623,8 @@ div.image-under-text{
     color: white;
     font-size: 32px;
     text-shadow: 1px 1px 8px orangered;
+	display: inline-flex;
+    align-items: center;
 }
 .text1 > h2{
 	text-align: center;
