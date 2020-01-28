@@ -203,10 +203,6 @@ function onScrollDisable() {
 }
 
 
-window.onload = function(){
-$(' .whenload ').css('display','none');
-};
-
 // all width
 $( 'section' ).click( function() { onScrollDisable() } );
 $( window ).resize(function(){
@@ -221,6 +217,9 @@ $( window ).scroll( function() {
 	//onScrollDisable();
 });
 $( document ).ready( function() {
+	window.onload = function(){
+		$(' .whenload ').css('display','none');
+	};
 	if( document.body.getBoundingClientRect().width > 700 ) {
 		$( window ).scroll( function() {
 			paralaksImages();
