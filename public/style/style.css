@@ -42,23 +42,23 @@ header > h1{
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: DodgerBlue transparent DodgerBlue transparent;
-  animation: lds-dual-ring 4s linear infinite;
+  animation: lds-dual-ring 3.2s linear infinite;
 }
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
   }
-  46% {
+  63% {
   	transform: rotate(1400deg);
   }
-  50% {
+  65% {
     transform: rotate(1440deg);
   }
   96% {
-    transform: rotate(40deg);
+    transform: rotate(750deg);
   }
   100% {
-  	transform: rotate(0deg);
+  	transform: rotate(720deg);
   }
 }
 
