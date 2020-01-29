@@ -48,9 +48,6 @@ header > h1{
   0% {
     transform: rotate(0deg);
   }
-  90% {
-  	transform: rotate(1400deg);
-  }
   100% {
     transform: rotate(1440deg);
   }
