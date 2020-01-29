@@ -49,6 +49,7 @@ header > h1{
     transform: rotate(0deg);
   }
   100% {
+	  border-color: red transparent red transparent;
     transform: rotate(1440deg);
   }
 }
