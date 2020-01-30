@@ -26,6 +26,67 @@ header > h1{
 .monitors{
 	display: block !important;
 }
+ul.menu{
+	list-style-type: none;
+    display: inline-flex;
+    width: 80%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+	justify-content: space-around;
+    margin-bottom: 20px;
+}
+ul > li > ul{
+	list-style-type: none;
+    padding-inline-start: 0;
+    position: absolute;
+}
+.li-podmenu > li > a{
+	font-size: 15px !important;
+}
+.li-podmenu > li {
+    text-align: left;
+	margin: 10px 0px;
+}
+.li-podmenu{
+	text-align: left;
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 3px black;
+    margin-top: 20px;
+}
+li.active > ul{
+	display: block;
+}
+li > ul{
+	display: none;
+}
+ p.marq {
+color: #0E1F58 !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+      -moz-animation: marquee 10s linear infinite;
+      -webkit-animation: marquee 10s linear infinite;
+      animation: marquee 15s linear infinite;
+      }
+      @-moz-keyframes marquee {
+      0% { transform: translateX(70%); }
+      100% { transform: translateX(-70%); }
+      }
+      @-webkit-keyframes marquee {
+      0% { transform: translateX(70%); }
+      100% { transform: translateX(-70%); }
+      }
+      @keyframes marquee {
+      0% { 
+      -moz-transform: translateX(70%);
+      -webkit-transform: translateX(70%);
+      transform: translateX(70%%) }
+      100% { 
+      -moz-transform: translateX(-70%);
+      -webkit-transform: translateX(-70%);
+      transform: translateX(-70%); }
+      }
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
