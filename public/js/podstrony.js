@@ -3,7 +3,7 @@
 		window.onscroll =  function() {scr()};
 		window.onload = function() {scr()};
 		function menu() {
-			if((scrollPos > -125) && (scrollPos <= 0)){
+			if((scrollPos > -80) && (scrollPos <= 0)){
 				document.getElementById('info').className = 'def';
 				document.getElementById( 'info' ).style.top = scrollPos + 'px';
 			}else{
