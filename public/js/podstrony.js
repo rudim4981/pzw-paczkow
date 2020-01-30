@@ -5,9 +5,9 @@
 		function menu() {
 			if((scrollPos > -125) && (scrollPos <= 0)){
 				document.getElementById('info').className = 'def';
+				document.getElementById( 'info' ).style.top = scrollPos + 'px';
 			}else{
 				document.getElementById('info').className = 'top';
-				document.getElementById( 'info' ).style.top = scrollPos + 'px';
 			}
 			scrollPos = (document.body.getBoundingClientRect()).top;
 		};
