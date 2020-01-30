@@ -15,11 +15,11 @@ function removeClass() {
 
 // Zawijanie menu
 function menu() {
-	if( document.body.getBoundingClientRect().top == 0 ) 
+	if( scrollPos == 0 ) 
 		document.getElementById( 'info' ).className = 'def';
-	else if( ( document.body.getBoundingClientRect().top > -80 ) && ( document.body.getBoundingClientRect().top < 0 ) ) {
+	else if( ( scrollPos > -80 ) && ( scrollPos < 0 ) ) {
 		document.getElementById( 'info' ).className = 'def';
-		document.getElementById( 'info' ).style.top = document.body.getBoundingClientRect().top + 'px';
+		document.getElementById( 'info' ).style.top = scrollPos + 'px';
 	}
 	else {
 		document.getElementById( 'info' ).className = 'top';
