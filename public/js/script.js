@@ -15,7 +15,7 @@ function removeClass() {
 
 // Zawijanie menu
 function menu() {
-	if( ( document.body.getBoundingClientRect().top > -80 ) && ( scrollPos <= 0 ) ) {
+	if( ( document.body.getBoundingClientRect().top > -80 ) && ( document.body.getBoundingClientRect().top <= 0 ) ) {
 		document.getElementById( 'info' ).className = 'def';
 		document.getElementById( 'info' ).style.top = document.body.getBoundingClientRect().top + 'px';
 	}
@@ -259,6 +259,7 @@ $(window).load(function() {
 	}, 1000);
 	});
 $( document ).ready(function(){
+	$('html').removeClass();
 	$('section').click(function(){
 		$('svg.li-menu-up-2').attr('data-cart','def');
 		$('svg.li-menu-up-2').parent().removeClass('active');
