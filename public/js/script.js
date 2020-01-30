@@ -261,7 +261,8 @@ $(window).load(function() {
 	}, 1000);
 	});
 $( document ).ready(function(){
-	$('html').removeClass();
+	$('html').removeAttr('class');
+	$('html').removeAttr('style');
 	$('section').click(function(){
 		$('svg.li-menu-up-2').attr('data-cart','def');
 		$('svg.li-menu-up-2').parent().removeClass('active');
