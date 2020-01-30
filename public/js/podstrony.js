@@ -26,6 +26,9 @@ $(window).load(function() {
 		$(' .whenload ').css('display','none');
 	}, 1000);
 	});
+$( window ).scroll( function() {
+	menu();
+});
 
 
 
