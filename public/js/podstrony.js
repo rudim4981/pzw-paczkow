@@ -1,5 +1,5 @@
 		var scrollPos = 0;
-    $( window ).ready(function(){scr();$( 'section.zajecia' ).css('margin-top', '200px');});
+    $( window ).ready(function(){scr();$( 'section.zajecia' ).css('margin-top', '200px');$('html').removeClass();});
 		window.onscroll =  function() {scr()};
 		window.onload = function() {scr()};
 		function menu() {
