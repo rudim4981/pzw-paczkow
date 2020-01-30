@@ -15,7 +15,9 @@ function removeClass() {
 
 // Zawijanie menu
 function menu() {
-	if( ( document.body.getBoundingClientRect().top > -80 ) && ( document.body.getBoundingClientRect().top < 0 ) ) {
+	if( document.body.getBoundingClientRect().top == 0 ) 
+		document.getElementById( 'info' ).className = 'def';
+	else if( ( document.body.getBoundingClientRect().top > -80 ) && ( document.body.getBoundingClientRect().top < 0 ) ) {
 		document.getElementById( 'info' ).className = 'def';
 		document.getElementById( 'info' ).style.top = document.body.getBoundingClientRect().top + 'px';
 	}
