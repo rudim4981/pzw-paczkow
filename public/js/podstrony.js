@@ -3,7 +3,7 @@
 		window.onscroll =  function() {scr()};
 		window.onload = function() {scr()};
 		function menu() {
-			if((document.body.getBoundingClientRect().top > -125) && (scrollPos <= 0)){
+			if((scrollPos > -125) && (scrollPos <= 0)){
 				document.getElementById('info').className = 'def';
 			}else{
 				document.getElementById('info').className = 'top';
