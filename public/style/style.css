@@ -81,7 +81,7 @@ color: #0E1F58 !important;
       0% { 
       -moz-transform: translateX(70%);
       -webkit-transform: translateX(70%);
-      transform: translateX(70%%) }
+      transform: translateX(70%) }
       100% { 
       -moz-transform: translateX(-70%);
       -webkit-transform: translateX(-70%);
@@ -258,7 +258,6 @@ div.oferty-jakdolaczyc > div{
 .podstrony-menu{
 	width: 95% !important;
     padding: 10px !important;
-}
 }
 .instruktorzy > * {
     color: rgb(14, 31, 88);
