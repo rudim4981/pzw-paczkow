@@ -7,6 +7,7 @@
 				document.getElementById('info').className = 'def';
 			}else{
 				document.getElementById('info').className = 'top';
+				document.getElementById( 'info' ).style.top = scrollPos + 'px';
 			}
 			scrollPos = (document.body.getBoundingClientRect()).top;
 		};
